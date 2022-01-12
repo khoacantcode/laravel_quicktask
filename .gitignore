@@ -1,4 +1,5 @@
 /node_modules
+/public/images
 /public/css
 /public/js
 /public/fonts
@@ -15,3 +16,4 @@ npm-debug.log
 yarn-error.log
 storage/framework/laravel-excel
 coverage/
+/public/bower_components

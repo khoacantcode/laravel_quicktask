@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('lang/{lang}', [
+    'as' => 'lang.switch', 
+    'uses' => '\App\Http\Controllers\LanguageController@switchLang'
+]);
+
 // ==================================== ADMIN ====================================
 $prefix_admin = config('custom.url.prefix_admin'); //default: admin
 
@@ -25,3 +30,7 @@ Route::prefix($prefix_admin)->group(function () {
         "uses" => "Admin\DashboardController@index"
     ]);
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
