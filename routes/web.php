@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('lang/{lang}', [
+    'as' => 'lang.switch', 
+    'uses' => '\App\Http\Controllers\LanguageController@switchLang'
+]);
+
 // ==================================== ADMIN ====================================
 $prefix_admin = config('custom.url.prefix_admin'); //default: admin
 
