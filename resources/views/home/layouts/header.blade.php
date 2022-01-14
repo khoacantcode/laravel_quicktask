@@ -2,7 +2,6 @@
     <div class="container d-flex align-items-center justify-content-between">
         <h1 class="logo">
             <img src= {{ asset("/images/icons/LaraBlug.png") }} alt="">
-            {{-- <a href={{ route('/home') }}>LaraBlug</a> --}}
             <a href="{{ route('home') }}">LaraBlug</a>
         </h1>
 
@@ -22,7 +21,7 @@
                     @else
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                {{ __('messages.welcome', ['name' => Auth::user()->name])}}<span class="caret"></span>
+                                {{ __('messages.welcome', ['name' => Auth::user()->name]) }}<span class="caret"></span>
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -50,13 +49,13 @@
             <li class="dropdown">    
                 <a href="#">
                         {{ __('messages.Language') }}
-                    {{Config::get('languages')[App::getLocale()]['display'] }}
+                    {{ Config::get('languages')[App::getLocale()]['display'] }}
                 </a>
                 <ul>
                     @foreach (Config::get('languages') as $lang => $language)
                         @if ($lang != App::getLocale())
                                 <a class="dropdown-item" href="{{ route('lang.switch', $lang) }}">
-                                    {{$language['display']}}
+                                    {{ $language['display']}}
                                 </a>
                         @endif
                     @endforeach

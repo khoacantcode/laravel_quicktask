@@ -13,7 +13,7 @@
           <article class="entry entry-single">
 
             <div class="entry-img">
-              <img src= {{ asset( "bower_components/Tempo/assets/img/blog/blog-1.jpg" )}}  alt="" class="img-fluid">
+              <img src= {{ asset( "bower_components/Tempo/assets/img/blog/blog-1.jpg") }}  alt="" class="img-fluid">
             </div>
 
             <h2 class="entry-title">
@@ -37,7 +37,7 @@
             <div class="entry-footer">
               <i class="bi bi-tags"></i>
               <ul class="tags">
-                <li><a> {{$post['post_cate'] }} </a></li>
+                <li><a> {{ $post['post_cate'] }} </a></li>
               </ul>
             </div>
 

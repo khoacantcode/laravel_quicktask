@@ -9,13 +9,11 @@
       <div class="row">
 
         <div class="reply-form">
-          <h4>Leave a Reply</h4>
-          <p>Your email address will not be published. Required fields are marked * </p>
           {{-- @dump($errors) --}}
 
           <form action= {{ route('update_post', $post->id) }} method="POST">
             {{ csrf_field() }}
-            {{ method_field('PUT')}}           
+            {{ method_field('PUT') }}           
             <div class="row">
               <div class="col-md-6 form-group">
                 <input name="post_title" type="string" class="form-control" placeholder="Your Title*" value="{{ $post->post_title }}">

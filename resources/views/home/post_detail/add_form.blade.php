@@ -9,9 +9,6 @@
       <div class="row">
 
         <div class="reply-form">
-          <h4>Leave a Reply</h4>
-          <p>Your email address will not be published. Required fields are marked * </p>
-          {{-- @dump($errors) --}}
           <form action= {{ route('add_post') }} >
             <div class="row">
               <div class="col-md-6 form-group">

@@ -15,7 +15,7 @@
           @foreach ($post_list as $post)
             <article class="entry">
               <div class="entry-img">
-                <img src= {{ asset( "bower_components/Tempo/assets/img/blog/blog-1.jpg" )}} alt="" class="img-fluid">
+                <img src= {{ asset( "bower_components/Tempo/assets/img/blog/blog-1.jpg") }} alt="" class="img-fluid">
               </div>
 
               <h2 class="entry-title">
@@ -41,7 +41,7 @@
                 </form>
                 <form action="{{ route('update_post_form', $post->id) }}" method="GET">
                   {{ csrf_field() }}
-                  {{ method_field('PUT')}}
+                  {{ method_field('PUT') }}
                   <input class="btn-learn-more scrollto" type="submit" value="{{ __('messages.Update') }}">
                 </form>
               </div>
