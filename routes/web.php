@@ -30,3 +30,7 @@ Route::prefix($prefix_admin)->group(function () {
         "uses" => "Admin\DashboardController@index"
     ]);
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
