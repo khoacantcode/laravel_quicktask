@@ -21,7 +21,8 @@ class Post extends Migration
             $table->foreign('post_cate')->references('id')->on('category');
             $table->bigInteger('post_author')->unsigned()->index();
             $table->foreign('post_author')->references('id')->on('users');
-            $table->timestamps();
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent();
         });
     }
 

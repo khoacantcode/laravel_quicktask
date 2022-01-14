@@ -13,4 +13,3 @@
 <!-- Page level custom scripts -->
 <script src= {{ asset( $path_to_bower . "js/demo/chart-area-demo.js") }} ></script>
 <script src= {{ asset( $path_to_bower . "js/demo/chart-pie-demo.js") }} ></script>
-{{-- <script src="{{ asset('js/app.js') }}"></script> --}}

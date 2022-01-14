@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'welcome' => 'お帰りなさい、:name',
+    'welcome' => 'こんにちは、:name',
     'dashboard' => "ダッシュボード",
     "MENU" => "メニュー",
     "users" => "ユーザー",
@@ -22,4 +22,12 @@ return [
     "Cancel" => "キャンセル",
     "Daily Visitor Overview" => "毎日の訪問者の概要",
     "post statistics" => "ポスト統計",
+    "Language" => "|| 言語：",
+    "Welcome_to" => "LaraBlugへようこそ",
+    "WE'RE CREATIVE AGENCY" => "私たちはクリエイティブエージェンシーです",
+    "Join the writing community right now" => "今すぐライティングコミュニティに参加してください",
+    "Add Post" => "ポストを追加",
+    "category" => "カテゴリー:  ",
+    "Delete" => "消去",
+    "Update" => "アップデート",
 ];
